@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovie Scents | Haute Parfumerie Boutique East Africa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="announcement-bar">
+        <p>✨ FREE DELIVERY COUNTRYWIDE & PAY ON DELIVERY IN KENYA ✨</p>
+    </div>
+
+    <header>
+        <div class="brand-logo">
+            <span class="logo-cursive">Lovie</span>
+            <span class="logo-sub">SCENTS</span>
+        </div>
+        
+        <div class="nav-container">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#collection">The Collection</a>
+                <a href="#quiz">Scent Finder</a>
+                <a href="#order-section" class="checkout-link">Place Order</a>
+                <a href="#admin-auth-anchor" class="admin-link-btn" id="navAdminBtn">Admin Terminal</a>
+            </nav>
+            <div class="cart-icon-container" id="openCartDrawer" onclick="document.getElementById('order-section').scrollIntoView({behavior: 'smooth'});">
+                <span class="cart-label">Bag</span>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Elegance in every drop.</h2>
+            <p>Explore our exquisite collection of highly concentrated, long-lasting luxury fragrances macerated locally for an unforgettable sensory presence.</p>
+            <div class="hero-badges">
+                <span class="badge">📦 Free Delivery</span>
+                <span class="badge">🤝 Pay on Delivery</span>
+            </div>
+            <a href="#collection" class="btn-primary">Explore the Collection</a>
+        </div>
+    </section>
+
+    <section id="story" class="brand-statement">
+        <p class="quote">"Perfume is the most intense form of memory."</p>
+        <p class="subline">Every bottle of Lovie Scents tells a story of elegance, high fashion, and timeless African romance.</p>
+        
+        <div class="experience-card">
+            <div class="experience-image" style="background-image: url('https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=800');"></div>
+            <div class="experience-text">
+                <h5>The Art of Sensory Joy</h5>
+                <p>Designed for individuals who demand luxury. Our oils bond intricately with skin warm-points, releasing notes slowly throughout the day for unmatched projection.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="test-automation-bar">
+        <span>🔧 Developer Automation Dock:</span>
+        <button id="runSystemTestBtn" class="btn-test">Run Automated Order Order Test Loop</button>
+    </div>
+
+    <section id="collection" class="showcase">
+        <h3 class="section-title">The Signature Collection</h3>
+        <p class="section-subtitle">Select your items below to populate your luxury checkout pouch</p>
+        
+        <div class="product-grid">
+            <div class="product-card" data-id="p1" data-name="Amour Infini" data-price="14500">
+                <div class="image-container">
+                    <div class="image-placeholder" style="background-image: url('https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=500');"></div>
+                </div>
+                <h4>Amour Infini</h4>
+                <p class="notes">Notes: Blush Rose, White Musk, & Vanilla</p>
+                <p class="description">A romantic, velvety fragrance designed for unforgettable luxury evenings.</p>
+                <p class="price">KSh 14,500</p>
+                <button class="btn-secondary add-to-bag-btn">Add to Bag</button>
+            </div>
+
+            <div class="product-card" data-id="p2" data-name="Pétale Doux" data-price="13000">
+                <div class="image-container">
+                    <div class="image-placeholder" style="background-image: url('https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=500');"></div>
+                </div>
+                <h4>Pétale Doux</h4>
+                <p class="notes">Notes: Peony, Fresh Bergamot, & Warm Amber</p>
+                <p class="description">A bright, crisp floral layout capturing the freshness of a spring morning.</p>
+                <p class="price">KSh 13,000</p>
+                <button class="btn-secondary add-to-bag-btn">Add to Bag</button>
+            </div>
+
+            <div class="product-card" data-id="p3" data-name="Nuit Étoilée" data-price="16000">
+                <div class="image-container">
+                    <div class="image-placeholder" style="background-image: url('https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=500');"></div>
+                </div>
+                <h4>Nuit Étoilée</h4>
+                <p class="notes">Notes: Dark Oud, Patchouli, & Midnight Jasmine</p>
+                <p class="description">An intense, mysterious woodsy scent tailored for bold, powerful presence.</p>
+                <p class="price">KSh 16,000</p>
+                <button class="btn-secondary add-to-bag-btn">Add to Bag</button>
+            </div>
+
+            <div class="product-card" data-id="p4" data-name="Chérie Gold" data-price="17500">
+                <div class="image-container">
+                    <div class="image-placeholder" style="background-image: url('https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?q=80&w=500');"></div>
+                </div>
+                <h4>Chérie Gold</h4>
+                <p class="notes">Notes: Saffron, Orange Blossom, & Sandalwood</p>
+                <p class="description">A warm, decadent, and majestic fragrance dripping with gold-tier luxury.</p>
+                <p class="price">KSh 17,500</p>
+                <button class="btn-secondary add-to-bag-btn">Add to Bag</button>
+            </div>
+
+            <div class="product-card" data-id="p5" data-name="Oud Majestueux" data-price="19500">
+                <div class="image-container">
+                    <div class="image-placeholder" style="background-image: url('https://images.unsplash.com/photo-1588405748373-122b2321bc31?q=80&w=500');"></div>
+                </div>
+                <h4>Oud Majestueux</h4>
+                <p class="notes">Notes: Rare Cambodian Oud, Cedar wood, Leather & Honey</p>
+                <p class="description">Deeply resinous, smoky, regal complexity designed exclusively for elite fragrance collectors.</p>
+                <p class="price">KSh 19,500</p>
+                <button class="btn-secondary add-to-bag-btn">Add to Bag</button>
+            </div>
+
+            <div class="product-card" data-id="p6" data-name="Sable Doré" data-price="15200">
+                <div class="image-container">
+                    <div class="image-placeholder" style="background-image: url('https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?q=80&w=500');"></div>
+                </div>
+                <h4>Sable Doré</h4>
+                <p class="notes">Notes: Warm Cardamom, Tonka Bean, Creamy Praline & Vanilla</p>
+                <p class="description">A spectacular gourmand experience reminiscent of sun-drenched coastal dunes.</p>
+                <p class="price">KSh 15,200</p>
+                <button class="btn-secondary add-to-bag-btn">Add to Bag</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" class="scent-quiz-section">
+        <div class="quiz-container">
+            <h3>Find Your Signature Scent</h3>
+            <p>Unsure which fragrance speaks to your soul? Let our concierge match your aura.</p>
+            <div class="quiz-options-mock">
+                <div class="quiz-question">Select Your Preferred Aura Profile:</div>
+                <div class="quiz-buttons">
+                    <button class="quiz-opt-btn" onclick="alert('Lovie Scents Recommendation: Amour Infini or Pétale Doux!')">Fresh Light Floral</button>
+                    <button class="quiz-opt-btn" onclick="alert('Lovie Scents Recommendation: Nuit Étoilée or Oud Majestueux!')">Deep Oud & Rich Resins</button>
+                    <button class="quiz-opt-btn" onclick="alert('Lovie Scents Recommendation: Chérie Gold or Sable Doré!')">Warm Sweet Spice Gourmand</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order-section" class="checkout-section">
+        <div class="checkout-container">
+            <h3>Complete Your Purchase</h3>
+            <p class="checkout-sub">✨ Pay on Delivery | Free Express Shipping via Premium Courier Network across Kenya.</p>
+            
+            <div class="checkout-summary-box">
+                <h4>Your Selected Fragrances</h4>
+                <div id="checkoutItemsList">
+                    <p class="empty-msg">Your luxury shopping bag is currently empty.</p>
+                </div>
+                <div class="total-price-row">
+                    <span>Subtotal Cost:</span>
+                    <strong id="checkoutTotalAmount">KSh 0</strong>
+                </div>
+                <div class="shipping-terms-row">
+                    <span>Shipping Fee:</span>
+                    <strong class="free-tag">FREE DELIVERY</strong>
+                </div>
+                <div class="shipping-terms-row">
+                    <span>Payment Method:</span>
+                    <strong>Cash/M-Pesa on Delivery</strong>
+                </div>
+            </div>
+
+            <form id="orderPlacementForm" class="luxury-form">
+                <div class="form-group">
+                    <label>Your Full Name</label>
+                    <input type="text" id="custName" placeholder="e.g., Almasi Amina" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number (For Delivery Layout Arrangements)</label>
+                    <input type="tel" id="custPhone" placeholder="e.g., 0712345678" required>
+                </div>
+                <div class="form-group">
+                    <label>Physical Location / Town / Estate / House Number</label>
+                    <textarea id="custLocation" rows="3" placeholder="e.g., Kilimani, Wood Avenue, Apartment 4B, Nairobi" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit-order">Confirm Order & Pay on Delivery</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="admin-auth-anchor" class="admin-auth-wrapper">
+        <div class="auth-box">
+            <h4>🔒 Administrative Gate System</h4>
+            <p>Enter pass-token to read raw customer databases, manage incoming logs and view inventory counts.</p>
+            <div class="auth-inputs-row">
+                <input type="password" id="adminSecretKeyField" placeholder="Enter System Password (Default: admin)">
+                <button id="adminLoginSubmitBtn" class="btn-auth-submit">Unlock Terminal</button>
+            </div>
+            <p id="authErrorDisplay" class="auth-error hidden">❌ Invalid Password Token Access Denied.</p>
+        </div>
+    </section>
+
+    <section id="admin-panel" class="admin-dashboard-section hidden">
+        <div class="admin-container">
+            <div class="admin-header-row">
+                <div>
+                    <h3>Lovie Scents — Enterprise Operations Dashboard</h3>
+                    <p class="admin-welcome-msg">Fulfillment State: <span id="liveClockDisplay">Live Sync Active</span></p>
+                </div>
+                <button id="clearAllOrdersBtn" class="btn-clear-admin">Flush/Clear All Database Logs</button>
+            </div>
+
+            <div class="admin-metrics-grid">
+                <div class="metric-card">
+                    <span class="m-title">Total Orders Active</span>
+                    <h2 id="metricTotalOrders">0</h2>
+                </div>
+                <div class="metric-card">
+                    <span class="m-title">Gross Revenue Pipeline</span>
+                    <h2 id="metricTotalRevenue" style="color: #49C182;">KSh 0</h2>
+                </div>
+                <div class="metric-card">
+                    <span class="m-title">Top Selling Fragrance</span>
+                    <h2 id="metricTopProduct" style="font-size: 1.15rem; color: #BA9299;">None Yet</h2>
+                </div>
+            </div>
+            
+            <h4>Incoming Live Order Logs Queue</h4>
+            <div class="orders-table-wrapper">
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>Time Stamp</th>
+                            <th>Customer Information</th>
+                            <th>Physical Location Address</th>
+                            <th>Items Ordered</th>
+                            <th>Total Income Value</th>
+                            <th>Status Action / Verification</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminOrdersDisplayTable">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-gallery">
+        <h3>Shared Luxury Moments</h3>
+        <p class="handle">@LovieScentsParfums</p>
+        <div class="gallery-grid">
+            <div class="gallery-item-wrap">
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=400');"></div>
+                <div class="gallery-caption">Scent Selection</div>
+            </div>
+            <div class="gallery-item-wrap">
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=400');"></div>
+                <div class="gallery-caption">The Perfect Mist</div>
+            </div>
+            <div class="gallery-item-wrap">
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=400');"></div>
+                <div class="gallery-caption">Evening Routine</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h5>Join The Club</h5>
+                <p class="newsletter-txt">Subscribe for private batch updates and high-fashion scent launches right here in Nairobi.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="footer-input">
+                    <button class="footer-btn">Join</button>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Our Houses</h5>
+                <p>The Grand Atelier — Kilimani, Nairobi, Kenya</p>
+                <p>Lovie Distribution Salon — Mombasa, Kenya</p>
+            </div>
+            <div class="footer-col">
+                <h5>Client Services</h5>
+                <p><a href="#order-section">Track My Package</a></p>
+                <p><a href="#order-section">Bespoke Courier Exchanges</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lovie Scents Parfums East Africa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+          </html>
+  

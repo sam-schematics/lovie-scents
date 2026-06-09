@@ -1,0 +1,934 @@
+/* --- Google Fonts & Core Tokens Customization --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFDFD;
+    color: #2A2525;
+    line-height: 1.6;
+}
+
+/* --- Announcement Strip --- */
+.announcement-bar {
+    background-color: #BA9299;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 12px 15px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+}
+
+/* --- Header & Luxury Navigation --- */
+header {
+    background-color: #FFFFFF;
+    padding: 25px 20px 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #F7ECEF;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.brand-logo {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.logo-cursive {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: #1A1415;
+    line-height: 0.85;
+    letter-spacing: -1px;
+}
+
+.logo-sub {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    color: #BA9299;
+    margin-top: 5px;
+    text-indent: 12px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6E6365;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 12px;
+    transition: color 0.3s;
+}
+
+nav a:hover, .checkout-link {
+    color: #BA9299;
+}
+
+.admin-link-btn {
+    background: #BA9299;
+    color: #FFF !important;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.65rem !important;
+}
+
+.cart-icon-container {
+    position: absolute;
+    right: 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    color: #2A2525;
+    cursor: pointer;
+}
+
+.cart-count {
+    background-color: #FFF2F4;
+    border: 1px solid #E5A9B4;
+    color: #BA9299;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+/* --- Hero Banner Frame --- */
+.hero {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=1200') no-repeat center center/cover;
+    padding: 140px 20px;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 253, 253, 0.75);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 650px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: #1A1415;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #4A4042;
+    margin-bottom: 25px;
+}
+
+.hero-badges {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.badge {
+    background-color: #FFFFFF;
+    border: 1px solid #E5A9B4;
+    color: #BA9299;
+    padding: 5px 15px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2A2525;
+    color: #FFFFFF;
+    padding: 16px 45px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #BA9299;
+    transform: translateY(-2px);
+}
+
+/* --- Brand Heritage Quote --- */
+.brand-statement {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #FFF5F6;
+}
+
+.brand-statement .quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 2.2rem;
+    color: #BA9299;
+    margin-bottom: 12px;
+}
+
+.brand-statement .subline {
+    font-size: 0.9rem;
+    max-width: 580px;
+    margin: 0 auto 40px auto;
+    color: #6E6365;
+    font-weight: 300;
+}
+
+/* --- Experience Cards Layout --- */
+.experience-card {
+    background-color: #FFFFFF;
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F7ECEF;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.experience-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.experience-text {
+    padding: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experience-text h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #1A1415;
+}
+
+.experience-text p {
+    font-size: 0.85rem;
+    color: #6E6365;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+/* --- Developer Automation Testing Controls --- */
+.test-automation-bar {
+    background-color: #F1EFF0;
+    padding: 12px 20px;
+    text-align: center;
+    border-bottom: 1px solid #E5E2E3;
+    font-size: 0.8rem;
+    color: #4A4042;
+}
+
+.btn-test {
+    background-color: #5C6E91;
+    color: white;
+    border: none;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-test:hover {
+    background-color: #43506C;
+}
+
+/* --- Product Showcase Grid Systems --- */
+.showcase {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.section-subtitle {
+    font-size: 0.85rem;
+    color: #BA9299;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #FFFFFF;
+    border: 1px solid #FDF0F2;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(229, 169, 180, 0.08);
+    transition: all 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(229, 169, 180, 0.15);
+}
+
+.image-container {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .image-placeholder {
+    transform: scale(1.05);
+}
+
+.product-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 6px;
+    color: #1A1415;
+}
+
+.product-card .notes {
+    font-size: 0.7rem;
+    color: #BA9299;
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.product-card .description {
+    font-size: 0.85rem;
+    color: #7A6F71;
+    margin-bottom: 20px;
+    font-weight: 300;
+    flex-grow: 1;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1A1415;
+    margin-bottom: 20px;
+    border-top: 1px solid #FFF2F4;
+    padding-top: 15px;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #2A2525;
+    color: #2A2525;
+    padding: 14px 0;
+    width: 100%;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* --- Scent Quiz Layout --- */
+.scent-quiz-section {
+    background: #FFF9FA;
+    padding: 80px 20px;
+    text-align: center;
+    border-top: 1px solid #FDF0F2;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.quiz-container h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.quiz-container p {
+    font-size: 0.9rem;
+    color: #6E6365;
+    margin-bottom: 35px;
+}
+
+.quiz-question {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: #1A1415;
+    margin-bottom: 15px;
+}
+
+.quiz-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.quiz-opt-btn {
+    background-color: #FFFFFF;
+    border: 1px solid #EAE2E4;
+    padding: 15px;
+    font-size: 0.85rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #4A4042;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quiz-opt-btn:hover {
+    border-color: #BA9299;
+    color: #BA9299;
+}
+
+/* --- Checkout Frame & Receipts Setup --- */
+.checkout-section {
+    padding: 90px 20px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F7ECEF;
+}
+
+.checkout-container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.checkout-container h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.checkout-sub {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #7A6F71;
+    margin-bottom: 40px;
+}
+
+.checkout-summary-box {
+    background-color: #FFF9FA;
+    border: 1px dashed #E5A9B4;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.checkout-summary-box h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #F7ECEF;
+    padding-bottom: 8px;
+}
+
+.summary-item-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    color: #4A4042;
+}
+
+.shipping-terms-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #7A6F71;
+    margin-top: 8px;
+}
+
+.free-tag {
+    color: #49C182;
+    font-weight: 600;
+}
+
+.total-price-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.15rem;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #E5A9B4;
+}
+
+.luxury-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #4A4042;
+}
+
+.form-group input, .form-group textarea {
+    padding: 14px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #EAE2E4;
+    background-color: #FFFDFD;
+    outline: none;
+    font-size: 0.9rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #BA9299;
+}
+
+.btn-submit-order {
+    background-color: #2A2525;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-submit-order:hover {
+    background-color: #BA9299;
+}
+
+/* --- Admin Authentication Gate Layout --- */
+.admin-auth-wrapper {
+    background-color: #FDF9FA;
+    padding: 50px 20px;
+    border-top: 1px solid #F7ECEF;
+}
+
+.auth-box {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 1px solid #F2E3E5;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+}
+
+.auth-box h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.auth-box p {
+    font-size: 0.8rem;
+    color: #7A6F71;
+    margin-bottom: 20px;
+}
+
+.auth-inputs-row {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-inputs-row input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #EAE2E4;
+    outline: none;
+}
+
+.btn-auth-submit {
+    background: #1A1415;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.auth-error {
+    color: #C14949;
+    font-size: 0.75rem;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+/* --- ADMIN PANEL ENGINE WORKSPACE --- */
+.admin-dashboard-section {
+    background-color: #1A1415;
+    color: #FFFFFF;
+    padding: 80px 20px;
+    border-top: 4px solid #BA9299;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.admin-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.admin-header-row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #3A3233;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.admin-header-row h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #FFF;
+}
+
+.btn-clear-admin {
+    background-color: #C14949;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.admin-welcome-msg {
+    font-size: 0.85rem;
+    color: #BA9299;
+    margin-top: 5px;
+}
+
+/* Analytics Metrics Dashboard Grid Widgets */
+.admin-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.metric-card {
+    background-color: #2A2525;
+    border-left: 3px solid #BA9299;
+    padding: 20px;
+}
+
+.metric-card .m-title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #A39698;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.metric-card h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* Orders Log Queue Table Framework */
+.admin-container h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #BA9299;
+}
+
+.orders-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.orders-table th {
+    background-color: #2A2525;
+    color: #BA9299;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+}
+
+.orders-table td {
+    padding: 15px;
+    border-bottom: 1px solid #3A3233;
+    vertical-align: top;
+    color: #EAE2E4;
+}
+
+.admin-item-line {
+    font-size: 0.8rem;
+    background: #2A2525;
+    padding: 4px 8px;
+    margin-bottom: 4px;
+    display: inline-block;
+    border-radius: 2px;
+    border: 1px solid #4A4042;
+}
+
+.btn-dispatch {
+    background-color: #49C182;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.btn-dispatch:hover {
+    background-color: #3AA36C;
+}
+
+.dispatched-status {
+    color: #A39698;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+/* --- Social Lifestyle Experience Media Media Gallery --- */
+.social-gallery {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.social-gallery h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.social-gallery .handle {
+    font-size: 0.85rem;
+    color: #BA9299;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.gallery-item-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.gallery-item {
+    width: 100%;
+    padding-top: 110px; /* Controls high mobile box proportions */
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+}
+
+.gallery-caption {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #7A6F71;
+}
+
+/* --- Multi-Column Luxury Footer Layout --- */
+footer {
+    background-color: #FFFFFF;
+    padding: 80px 20px 40px 20px;
+    border-top: 1px solid #F7ECEF;
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-col h5 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.footer-col p, .footer-col a {
+    font-size: 0.85rem;
+    color: #7A6F71;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.newsletter-form {
+    display: flex;
+    border-bottom: 1px solid #2A2525;
+    padding-bottom: 5px;
+    max-width: 320px;
+}
+
+.footer-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 0.85rem;
+}
+
+.footer-btn {
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #BA9299;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid #FDF0F2;
+    font-size: 0.75rem;
+    color: #A39698;
+}
+
+/* --- Media Queries for Responsive Large Screens --- */
+@media (min-width: 768px) {
+    .experience-card {
+        flex-direction: row;
+    }
+    .experience-image {
+        width: 45%;
+        height: auto;
+        min-height: 250px;
+    }
+    .experience-text {
+        width: 55%;
+    }
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-columns {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .quiz-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .admin-header-row {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+    
